@@ -1,0 +1,76 @@
+<!-- 
+<input type="text" [disabled] ="disabled" >  <br> <br>
+
+<input type="text" [disabled]="disabled">  <br> <br>
+
+<button (click)="enableBox">Enable Me</button> <br> <br>
+ 
+<input type="text" [(ngModel)]="username"> 
+ <div>{{username}}</div>
+<input type="text" [(ngModel)]="companyname" >
+<h1> {{companyname}}</h1>  
+<ul> <li> <a routerLink="admin/login">Login</a> </li> <li>
+        <a routerLink="admin/list">List</a> </li> </ul>
+<router-outlet> </router-outlet>
+
+<button (click)="loadAdmin()"> Load Admin list </button>
+<button (click)="loaduser" > Load user list</button> -->
+<!-- 
+<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+
+    <input type="text" name="email" ngModal> <br> <br>
+    <input type="password" name="password" ngModal > <br> <br>
+    <button type="submit">submit</button>
+</form> -->
+<!-- <app-userdemoapi></app-userdemoapi>
+
+<router-outlet></router-outlet> -->
+<!-- <div class="container">
+<form #myForm="ngform">
+    <div class="form-group">
+    <label for="">policyName </label> <br> <br>
+    <input type="policyName" class="form-control" name="policyName" aria-describedby="policyName" 
+    [(ngModel)]="userObj.name"> <br> <br>
+    </div>
+    <div class="form-group">
+    <label for="">companyName </label> <br> <br>
+    <input type="companyName" class="form-control" name="companyName" aria-describedby="companyName" 
+    [(ngModel)]="userObj.companyName"> <br> <br>
+    </div>
+    <div class="form-group">
+    <label for="">policyDetails </label> <br> <br>
+    <input type="policyDetails" class="form-control" name="policyDetails" aria-describedby="emailhelp" 
+    [(ngModel)]="userObj.policyDetails"> <br> <br>
+    </div>
+    <div class="form-group">
+    <label for="">attachment</label> <br> <br>
+   <input type="attachment" class="form-control" name="attachment" aria-describedby="attachment" 
+   [(ngModel)]="userObj.attachment"> <br> <br>
+  </div>
+
+   <button class="btn btn-primary" type="button" (click)="adduser(myform.value)"**ngIf="!isedit">submit</button>
+  <button class="btn btn-danger"**ngIf="isedit"(click)="updateuser()" >update</button> 
+ </form> --> 
+
+<table class="table" >
+    <thead>
+        <tr>
+            <th scope="col" > policyName</th>
+            <th scope="col" > companyName</th>
+            <th scope="col" > policyDetails</th>
+            <th scope="col" > attachment</th>
+            <th scope="col" > Edit</th>
+            <th scope="col" > Delete</th>
+        </tr>
+    </thead>
+    <!-- <tbody>
+        <tr>
+            <td>{{user.policyName}}</td>
+            <td>{{user.companyName}}</td>
+            <td>{{user.policyDetails}}</td>
+            <td>{{user.attachment}}</td> 
+            <td><button (click)="edituser(user)" class="btn btn-warning">Edit</button></td>
+            <td><button (click)="deleteuser(user)" class="btn btn-danger" >Delete</button></td>
+        </tr>
+    </tbody> -->
+</table>
